@@ -115,7 +115,7 @@ const Login = () => {
                         </div>
 
                         {signInError}
-                        <input className='btn w-full max-w-xs text-white' type="submit" value="Login" />
+                        <input className='btn w-full max-w-xs bg-primary text-white' type="submit" value="Login" />
                     </form>
                     <p className='text-head'>Forget Password?<button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
                     <ToastContainer />

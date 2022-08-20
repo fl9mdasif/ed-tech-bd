@@ -17,8 +17,9 @@ const Home = () => {
             <Statistics />
             {user && <Services />}
             <Blogs />
-            <Contact />
             <Testimonial />
+            <Contact />
+
         </div>
     );
 };
