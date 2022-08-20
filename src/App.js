@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import 'react-toastify/dist/ReactToastify.css';
+import Navbar from '../src/Components/Shared/Navbar'
+import { Route, Routes } from 'react-router-dom';
+import Login from './Components/Shared/Login/Login';
+import SignUp from './Components/Shared/Login/SignUp';
+import NotFound from './Components/Shared/NotFound';
+import Home from './Components/Home/Home';
+import Services from './Components/Home/Services';
+import PrivateAuth from './Components/Shared/Login/PrivateAuth';
+import Footer from './Components/Shared/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/signup" element={<SignUp />}></Route>
+        <Route path="/services" element={
+          <PrivateAuth>
+            <Services />
+          </PrivateAuth>
+        }></Route>
+        <Route path="*" element={<NotFound />}></Route>
+      </Routes>
+      <Footer />
     </div>
   );
 }
