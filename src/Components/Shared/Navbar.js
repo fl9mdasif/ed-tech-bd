@@ -18,7 +18,6 @@ const Navbar = () => {
         <>
             <li><Link to='/' href="#2">Home</Link></li>
             <li><Link to='/services' >Services</Link></li>
-            <li><Link to='/completed-task' href="#2">Completed Task</Link></li>
 
             {
                 user ?
