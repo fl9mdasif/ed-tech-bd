@@ -55,7 +55,15 @@ const Navbar = () => {
 
                         </ul >
                     </div >
-                    <a href="/" className=" -16 bg-base pl-3 font-bold text-head normal-case text-xl" > To-Do App</a >
+                    <a href="/" className=" -16 bg-base pl-3 font-bold text-head normal-case text-xl" >
+                        <img style={{
+                            height: '40px',
+                            width: '100%',
+                            marginLeft: '10px',
+                        }}
+                            alt=''
+                            src="https://www.elite.net.bd/wp-content/uploads/2020/03/logo-web-elite.png" />
+                    </a >
                 </div >
                 <div className="navbar-end hidden lg:flex " >
                     <ul className="menu menu-horizontal" >
