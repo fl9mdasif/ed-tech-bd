@@ -1,6 +1,4 @@
-# Elite communication internet provider
-
-This project was bootstrapped with [https://sunshine-assignment.web.app/](https://sunshine-assignment.web.app/).
+# Elite communication internet provider [https://sunshine-assignment.web.app/](https://sunshine-assignment.web.app/).
 
 ### `What is inside my project`
 * homepage
